@@ -17,7 +17,10 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://kikolazarov8:nVi13efY0O2u6SCa@cluster0.5ovnk5w.mongodb.net/test")
+mongoose.connect("mongodb+srv://kikolazarov8:nVi13efY0O2u6SCa@cluster0.5ovnk5w.mongodb.net/dailyBlog", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+});
 
 const postSchema = {
   title: String,
@@ -85,6 +88,6 @@ app.get("/", function(req, res){
   });
 });
 
-app.listen(3000, function() {
-  console.log("Server started on port 3000");
+app.listen(4000, function() {
+  console.log("Server started on port 4000");
 });
