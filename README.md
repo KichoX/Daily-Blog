@@ -1,6 +1,8 @@
 # Daily-Blog
 CHECK IT AT : https://daily-blog-ua4j.onrender.com/
 
+This is the same as The journal template i did for local use without database but this one hosted and ready for actual use. Btw you can click the footer text to navigate you to my cv if you want to learn more about me.
+
 step by step of the upload:
 
 1. Selecting whole directory in VScode and opening terminal.
